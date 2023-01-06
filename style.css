@@ -4,7 +4,13 @@
     justify-content: center;
     margin-top: 300px;
 }
-
+body {
+    background-image: url("images/background_image_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+ }
 .key{
     border: 4px solid black;
     border-radius: 5px;
@@ -31,4 +37,48 @@
     transform: scale(1.1);
     border-color: #ffc600;
     box-shadow: 0 0 10px #ffc600;
+}
+
+/*---------mobile phones----------*/
+@media (max-width: 768px){
+    .keys{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+    }
+    body {
+        background-image: url("images/background_image_2.jpg");
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-attachment: fixed;
+     }
+     .key{
+        border: 2px solid black;
+        border-radius: 3px;
+        margin: .5rem;
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+        transition: all 0.07s;
+        width: 50px;
+        text-align: center;
+        color: white;
+        background: rgba(0,0,0,0.4);
+        text-shadow: 0 0 5px black;
+    }
+    .sound{
+        display: block;
+        font-size: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffc600;
+    }
+    .playing{
+        transform: scale(1.1);
+        border-color: #ffc600;
+        box-shadow: 0 0 10px #ffc600;
+    }
+    
 }
